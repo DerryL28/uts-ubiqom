@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Format Project Ubiquitous Computing</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+    <link rel="stylesheet" href="/styles/style.css"> 
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    </script>
+
+    <script src="/scripts/default.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </head>
+  <body>
+    <div class="top-menu">
+      <a href="/">Home</a>
+      <a href="/courses">Courses</a>
+      <a href="/rnd">RnD</a>
+      <a href="/blog">Blog</a>
+    </div> 
+  
+    <div class="container mt-2">
+      <a href="/courses/ubicom">
+        &laquo; Ubiquitous Computing
+      </a>
+      <h1>
+        <a href="/courses/ubicom/contoh-format-project">
+          Format Project Ubiquitous Computing
+        </a>
+      </h1>
+      <a href="/">Derrl Muhamad Afuza Ramadhan</a>
+    </div>
+
+    <div class="container mt-4">
+      <div x-init="" x-html="mdToHTML($el.innerHTML)" class="row mt-2">
+## Intro 
+- Artikel ini membahas peran penting pengembangan platform Forex berbasis kecerdasan buatan dalam membantu trader mencapai hasil yang lebih baik
+
+## Latar Belakang 
+Perdagangan valas, sebagai salah satu bentuk investasi paling likuid dan dinamis di dunia, telah menjadi peluang bagi investor dan berbagai kalangan untuk memperoleh keuntungan. Namun, pasar Forex sangat kompleks, harga berubah dengan cepat dan dipengaruhi oleh berbagai faktor, termasuk ekonomi global, politik, dan kejadian tak terduga. Trader, mulai dari individu hingga lembaga keuangan, selalu mencari cara untuk memaksimalkan keuntungan dan mengelola resiko. Dalam upaya ini, Teknologi AI telah mampu memberikan analisis yang cukup akurat dan cepat, memungkinkan untuk mengambil keputusan lebih tepat waktu berdasarkan data yang diambil.
+Seiring dengan kemajuan dalam pengembangan platform Forex yang didukung AI, trader kini dapat mengakses fitur yang memungkinkan mereka melakukan analisis pasar, mengidentifikasi tren, mengelola risiko, dan bahkan melakukan trading secara otomatis. Dalam hal ini, teknologi buatan telah membantu meningkatkan kinerja trader Forex, meningkatkan keuntungan, dan mengelola risiko dengan lebih baik. Selain itu, kajian bagaimana pengembangan platform Forex berdasarkan AI memainkan peran penting dalam memberikan solusi kepada trader, memberi mereka keunggulan kompetitif yang dibutuhkan dalam lingkungan perdagangan yang kompetitif.
+
+
+## Branding 
+- Merk: Global Advantage Currency Optimization Results 
+- Inspirasi merk: Harapan untuk mencapai hasil yang memuaskan
+- Tagline: Sorting Berita Forex
+- Campaign: menjadikan lokasi sebagai patokan untuk info berita yang sedang trend
+- Target user:
+  - Usia 21+ 
+  - Trader Individu, Institusi, lembaga keuangan dan Risk Managers, CryptO Trader 
+- User experience theme:
+  - Smart Trading for Smart Outcomes
+  - Mudah digunakan
+  - Membuat keputusan berdasarkan data
+
+## User Story
+Pada tahap ini kita mengeksplorasi kebutuhan prioritas dari para pengguna untuk kita wujudkan sebagai fitur pada sistem atau aplikasi yang akan dibuat.
+User story [[1]](https://www.mountaingoatsoftware.com/agile/user-stories) memudahkan kita membuat prioritas fitur-fitur untuk dikerjakan untuk jangka waktu tertentu.
+
+|Sebagai|Saya ingin bisa|Sehingga|Prioritas
+|---|---|---|---|
+|Sistem|Menyortir berita|Dapat dengan mudah memantau hasil beritanya|⭐⭐⭐⭐⭐|
+|Sistem|&raquo; Prediksi tren dari berbaggai macam nilai|Menghasilkan prediksi naik atau turunnya harga |⭐⭐⭐⭐⭐|
+
+
+## Metode dan Algoritma 
+Pada tahap ini kita menjelaskan metode dan algoritma yang digunakan pada setiap komponen teknologi UbiCom. Contoh:
+- Sensor:
+  - GPS Recognition: Penggunaan lokasi pada perangkat yang digunakan untuk melihat berita dari posisi user.
+
+- Machine Learning untuk Prediksi Harga:
+  - Regressi Linier: metode sederhana untuk memprediksi perubahan harga mata uang berdasarkan data historis
+  - Support Vector Machines (SVM): SVM dapat digunakan untuk mengidentifikasi tren pasar dan titik masuk/keluar potensial
+  - Jaringan Saraf Tiruan (Neural Networks): Deep learning neural networks dapat digunakan untuk membuat model yang lebih kompleks dan dapat memahami pola yang rumit dalam data harga pasar
+
+- Analisis Sentimen dan Berita:
+  -	Pemrosesan Bahasa Alami (NLP): Algoritma NLP digunakan untuk menganalisis berita dan sentimen media sosial yang dapat memengaruhi pergerakan harga.
+  -	Analisis Sentimen Emosional: Algoritma ini dapat mengukur tingkat emosi dalam berita atau percakapan sosial yang dapat mempengaruhi pasar
+
+- Klasifikasi Pola
+  - Naive Bayes, Decision Trees, atau Random Forests : untuk mengklasifikasikan pergerakan harga.
+
+## Struktur Data 
+Pada tahap ini kita mengeksplorasi struktur data yang digunakan pada teknologi UbiCom. Contoh:
+
+<pre class="mermaid">
+erDiagram
+  PENGGUNA {
+    int id_pengguna
+    string username
+    string email
+    string password
+    string nama_lengkap
+  }
+  KONDISI ||--o{ Price Data : dideteksi 
+  Price Data {
+    int id_uang
+    int bid_price
+    int ask_price
+    int high_price
+    int low_price
+    int volume
+    datetime time_stamp
+  }
+  KONDISI ||--o{ Currency Pair : diberikan 
+  Currency Pair {
+    int id_uang
+    string nama_uang
+    int base_currency
+    int quote_qurrency
+  }
+  KONDISI ||--o{ Base Currency : diberikan 
+    Base Currency {
+      int id_uang
+      string nama_uang
+      int base_currency
+      int quote_qurrency
+    }RESPON ||--o{ berita : diberikan
+  berita {
+    int id_uang
+    string nama_uang
+    string berita
+    datetime time_stamp
+  }
+</pre>
+
+## Arsitektur Sistem 
+- database
+- pyhton
+
+- Web
+
+- lokasi
+- berita
+
+- data pasar dan Forex
+- 
+
+## Deskripsi Teknologi 
+Pada tahap ini kita menjelaskan setiap teknologi hardware dan software yang digunakan dalam pembangunan sistem.
+- Mesin komputasi
+  - Edge server: NVIDIA EGX Platform. memakai Pemrosesan AI di Tepi Jaringan, Data diolah dan dianalisis di perangkat atau sistem di lokasi fisiknya
+  - Cloud server: AWS.  AWS SageMaker: men-deploy model machine learning
+  - pc : windows & mac. perangkat untuk membuka aplikasi
+- Software development
+  - Backend developer: NewsAPI. ForexAPI. Server. tensorflow. Data Base mengambil data penting untuk keperluan web
+
+- Sensor 
+  - GPS : Mendeteksi lokasi pengguna untuk mengambil berita disekitar
+  - TradingView API : https://www.tradingview.com/broker-api-docs/rest-api-spec/#tag/Broker-Configuration/operation/getMapping
+      </div>
+    </div> 
+
+  </body>
+</html>
